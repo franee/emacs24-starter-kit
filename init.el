@@ -31,12 +31,16 @@
 ; franee customizations
 
 ;; set default dir
-(setq default-directory "/opt/")
+(setq default-directory "~/code/")
 
+;; remove menu bar
 (menu-bar-mode -1)
 
 ;; show line numbers
 (global-linum-mode 1)
+
+;; show column numbers
+(setq column-number-mode t)
 
 ;; remove trailing spaces on save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
